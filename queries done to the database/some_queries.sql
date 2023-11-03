@@ -25,6 +25,27 @@ SELECT LEFT(CONVERT(VARCHAR, CONVERT(DATETIME, stop_date_and_time, 120), 120), 4
 FROM police_data
 GROUP BY LEFT(CONVERT(VARCHAR, CONVERT(DATETIME, stop_date_and_time, 120), 120), 4)
 
+
+--More optimized way of doing the query with a subquery
+SELECT Extracted_year, COUNT(*) AS Count
+FROM (
+    SELECT LEFT(CONVERT(VARCHAR, CONVERT(DATETIME, stop_date_and_time, 120), 120), 4) AS Extracted_year
+    FROM police_data
+) subquery
+GROUP BY Extracted_year
+
+
+--Further improvements to the query by using CTE (Common Table Expression)
+WITH ConvertedData AS (
+    SELECT LEFT(CONVERT(VARCHAR, CONVERT(DATETIME, stop_date_and_time, 120), 120), 4) AS Extracted_year
+    FROM police_data
+)
+
+SELECT Extracted_year, COUNT(*) AS Count
+FROM ConvertedData
+GROUP BY Extracted_year
+
+
 --Count records from 2014 year
 --Converts the stop_date_and_time VARCHAR column to a datetime using the CONVERT function and then to the 120 style (YYYY-MM-DD HH:MI:SS).
 --Extracts the first four characters of the converted datetime value using LEFT.
