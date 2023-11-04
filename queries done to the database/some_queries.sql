@@ -55,3 +55,9 @@ SELECT LEFT(CONVERT(VARCHAR, CONVERT(DATETIME, stop_date_and_time, 120), 120), 4
 FROM police_data
 WHERE LEFT(CONVERT(VARCHAR, CONVERT(DATETIME, stop_date_and_time, 120), 120), 4) = '2014'
 GROUP BY LEFT(CONVERT(VARCHAR, CONVERT(DATETIME, stop_date_and_time, 120), 120), 4)
+
+--Get the total number of stops recorded
+SELECT COUNT(*) AS TotalStops FROM police_data;
+
+--Count stops by gender.
+SELECT driver_gender, COUNT(*) AS StopsByGender FROM police_data GROUP BY driver_gender;
