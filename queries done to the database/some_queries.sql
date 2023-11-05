@@ -61,3 +61,6 @@ SELECT COUNT(*) AS TotalStops FROM police_data;
 
 --Count stops by gender.
 SELECT driver_gender, COUNT(*) AS StopsByGender FROM police_data GROUP BY driver_gender;
+
+--Joining tables
+SELECT * FROM police_data JOIN officers_data ON police_data.stopped_by = officers_data.badge_number;
