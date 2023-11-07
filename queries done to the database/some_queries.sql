@@ -67,3 +67,6 @@ SELECT * FROM police_data JOIN officers_data ON police_data.stopped_by = officer
 
 --Joining tables
 SELECT * FROM officers_data JOIN police_departments_data ON officers_data.city_department_id = police_departments_data.city_department_id;
+
+--Data quality check
+SELECT COUNT(*) FROM police_data WHERE stop_outcome = 'N/D';
