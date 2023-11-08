@@ -70,3 +70,6 @@ SELECT * FROM officers_data JOIN police_departments_data ON officers_data.city_d
 
 --Data quality check
 SELECT COUNT(*) FROM police_data WHERE stop_outcome = 'N/D';
+
+--Getting average stop duration time
+SELECT AVG(stop_duration_in_minutes) AS average_stop_time FROM police_data;
