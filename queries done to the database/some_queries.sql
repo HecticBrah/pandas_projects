@@ -73,3 +73,6 @@ SELECT COUNT(*) FROM police_data WHERE stop_outcome = 'N/D';
 
 --Getting average stop duration time
 SELECT AVG(stop_duration_in_minutes) AS average_stop_time FROM police_data;
+
+--Getting values for different races in the table and sorting it by occurrences
+SELECT driver_race, COUNT(*) AS DifferentRaces FROM police_data GROUP BY driver_race ORDER BY DifferentRaces DESC; 
