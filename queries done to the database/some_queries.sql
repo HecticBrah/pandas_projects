@@ -76,3 +76,7 @@ SELECT AVG(stop_duration_in_minutes) AS average_stop_time FROM police_data;
 
 --Getting values for different races in the table and sorting it by occurrences
 SELECT driver_race, COUNT(*) AS DifferentRaces FROM police_data GROUP BY driver_race ORDER BY DifferentRaces DESC; 
+
+--Adding a new column with just the date
+ALTER TABLE police_data
+ADD just_date VARCHAR(10); -- Adjust the VARCHAR length to accommodate the new format
