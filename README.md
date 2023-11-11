@@ -1,6 +1,6 @@
 # Police Dataset Project
 
-This repository contains a collection of Jupyter Notebooks focused on data manipulation, cleaning, exporting CSV files, SQL files, and an image of the database diagram.
+This repository contains an analysis of a police dataset, starting with a file downloaded from Kaggle. The data is cleaned and manipulated using Jupyter Notebooks, and additional dataframes are created for the purpose of building a SQL database. The project also includes exporting dataframes to CSV files, creating a SQL database, and performing queries on the database.
 
 ## Overview
 
