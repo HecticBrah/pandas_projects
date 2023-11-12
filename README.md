@@ -1,47 +1,54 @@
 # Police Dataset Project
 
-This repository contains an analysis of a police dataset, starting with a file downloaded from Kaggle. The data is cleaned and manipulated using Jupyter Notebooks, and additional dataframes are created for the purpose of building a SQL database. The project also includes exporting dataframes to CSV files, creating a SQL database, and performing queries on the database.
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 ## Overview
 
-The Jupyter Notebooks in this repository showcase various data manipulation tasks primarily using the Pandas library in Python. Each notebook explores a specific project or task related to data cleaning, analysis, and export.
+The Police Dataset Project is a data analysis project that originated from a dataset downloaded from Kaggle. The repository contains the initial dataset file, Jupyter notebooks for cleaning and exporting data as CSV files, notebooks for creating a cleaned starting file and a SQL database, and additional files showcasing SQL skills.
 
-## Contents
+## Table of Contents
 
-### 1. Jupyter Notebooks
-- The repository contains several Jupyter Notebooks that demonstrate data cleaning, manipulation, and analysis using Pandas.
+- [Project Structure](#project-structure)
+- [Cleaning and Exporting Data](#cleaning-and-exporting-data)
+- [Creating a SQL Database](#creating-a-sql-database)
+- [Database Diagram](#database-diagram)
+- [SQL Queries](#sql-queries)
+- [License](#license)
 
-### 2. Exported CSV Files
-- Cleaned and processed data are exported to CSV files for reference and further analysis.
+## Project Structure
 
-### 3. SQL Files
-- SQL files related to the projects or data analysis tasks. These might include database creation, table schemas, or queries used in the analysis.
+The repository is organized as follows:
 
-### 4. Database Diagram Image
-- An image depicting the database diagram used in the projects.
+- **`starting file/`**: Initial dataset file downloaded from Kaggle.
+- **`jupyter notebooks/`**: Jupyter notebooks for data cleaning, CSV export, creating a cleaned starting file, and setting up a SQL database.
+- **`sql queries for creating database tables/`**: SQL files for database creation, schema setup, and queries.
+- **`queries done to the databases/`**: SQL files for database manipulation.
+- **`database diagram/`**: Image file of the database diagram.
 
-## Projects Included
+## Cleaning and Exporting Data
 
-The repository encompasses a variety of projects and tasks, such as:
-- Data cleaning and preprocessing
-- Exploratory data analysis
-- SQL database interaction and analysis
-- Exporting and managing data in CSV format
+The `jupyter notebooks/` directory contains Jupyter notebooks documenting the process of cleaning the data and exporting it as CSV files. The cleaned starting file is also included in this section.
 
-## Usage
+## Creating a SQL Database
 
-Feel free to explore the Jupyter Notebooks to understand different data manipulation and analysis techniques. You can run and experiment with the code in your local environment.
+Explore the `sql queries for creating database table/` directory to find the queries dedicated to creating a SQL database. These queries detail the steps taken to make a structured SQL database.
 
-## Contribution
+## Database Diagram
 
-Contributions to this project are welcome! If you have any ideas or improvements, feel free to fork the repository, make changes, and create a pull request.
+The `database diagram/` directory contains a database diagram (`database_diagram.png`) illustrating the structure of the SQL database.
+
+![Database Diagram](database diagram/police_db_diagram.png)
+
+## SQL Queries
+
+The `queries done to the databases/` directory includes SQL file which showcases SQL skills and demonstrate how to retrieve data from the database.
 
 ## License
 
-This project is under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the [MIT License](LICENSE). See the [LICENSE](LICENSE) file for details.
 
-## Disclaimer
+---
 
-Please note that the data and analysis in these notebooks are for educational purposes and may not represent real-world scenarios.
+Feel free to customize this template further to include more specific details about your project, dependencies, or instructions for running the notebooks and SQL scripts.
 
-Happy Coding!
+
