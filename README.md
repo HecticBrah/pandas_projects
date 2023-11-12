@@ -4,7 +4,8 @@
 
 ## Overview
 
-This repository contains an analysis of a police dataset, starting with a file downloaded from Kaggle. The repository contains the initial dataset file. the data is is then cleaned and manipulated using Jupyter Notebooks with Pandas, Matplotlib and Seaborn Python libraries, two additional dataframes are created for the purpose of building a SQL database. The project also includes exporting dataframes to CSV files, creating a SQL database, and performing queries on the database.
+This repository contains a comprehensive analysis of a police dataset, initiated with a file sourced from Kaggle. Within this repository, you'll find the original dataset, which undergoes a meticulous cleaning and manipulation process employing Jupyter Notebooks powered by the Pandas Python library. Subsequently, this refined dataset is utilized to generate insightful visualizations using the Matplotlib and Seaborn Python libraries. In addition to these visualizations, two supplementary dataframes are crafted with the intent of constructing a robust SQL database.
+The project extends beyond visualization, encompassing the exportation of these dataframes into CSV files, the establishment of a SQL database, and the execution of queries on this database. Moreover, an image displaying the database diagram is included, providing a visual representation of the database structure.
 
 ## Table of Contents
 
