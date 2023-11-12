@@ -28,11 +28,11 @@ The repository is organized as follows:
 
 ## Cleaning and Exporting Data
 
-The `jupyter notebooks/` directory contains Jupyter notebooks documenting the process of cleaning the data and exporting it as CSV files. The cleaned starting file is also included in this section.
+The `jupyter notebooks/` directory contains Jupyter notebooks documenting the process of cleaning the data, making graphs for visualization and exporting cleaned data as CSV files. The cleaned starting file is also included in this section.
 
 ## Creating a SQL Database
 
-Explore the `sql queries for creating database table/` directory to find the queries dedicated to creating a SQL database. These queries detail the steps taken to make a structured SQL database.
+Explore the `sql queries for creating database table/` directory to find the queries dedicated to creating a SQL database. These queries detail the steps taken to make a SQL database.
 
 ## Database Diagram
 
@@ -41,7 +41,7 @@ The `database diagram/` directory contains a database diagram (`police_db_diagra
 
 ## SQL Queries
 
-The `queries done to the databases/` directory includes SQL file which showcases SQL skills and demonstrate how to retrieve data from the database.
+The `queries done to the databases/` directory includes SQL file which showcases SQL skills and demonstrate how to retrieve and filter data from the SQL database.
 
 ## License
 
