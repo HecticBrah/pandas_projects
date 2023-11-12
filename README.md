@@ -38,7 +38,6 @@ Explore the `sql queries for creating database table/` directory to find the que
 
 The `database diagram/` directory contains a database diagram (`database_diagram.png`) illustrating the structure of the SQL database.
 
-![Database Diagram](database diagram/police_db_diagram.png)
 
 ## SQL Queries
 
