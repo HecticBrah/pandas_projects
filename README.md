@@ -20,7 +20,8 @@ This repository contains an analysis of a police dataset, starting with a file d
 The repository is organized as follows:
 
 - **`starting file/`**: Initial dataset file downloaded from Kaggle.
-- **`jupyter notebooks/`**: Jupyter notebooks for data cleaning, CSV export, creating a cleaned starting file, and setting up a SQL database.
+- **`jupyter notebooks/`**: Jupyter notebooks for data cleaning.
+- **`exported cleaned csv files/`**: Exported CSV files.
 - **`sql queries for creating database tables/`**: SQL files for database creation, schema setup, and queries.
 - **`queries done to the databases/`**: SQL files for database manipulation.
 - **`database diagram/`**: Image file of the database diagram.
