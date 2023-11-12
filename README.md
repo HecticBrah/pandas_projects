@@ -4,7 +4,7 @@
 
 ## Overview
 
-The Police Dataset Project is a data analysis project that originated from a dataset downloaded from Kaggle. The repository contains the initial dataset file, Jupyter notebooks for cleaning and exporting data as CSV files, notebooks for creating a cleaned starting file and a SQL database, and additional files showcasing SQL skills.
+This repository contains an analysis of a police dataset, starting with a file downloaded from Kaggle. The repository contains the initial dataset file. the data is is then cleaned and manipulated using Jupyter Notebooks with Pandas, Matplotlib and Seaborn Python libraries, two additional dataframes are created for the purpose of building a SQL database. The project also includes exporting dataframes to CSV files, creating a SQL database, and performing queries on the database.
 
 ## Table of Contents
 
