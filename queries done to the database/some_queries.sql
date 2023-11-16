@@ -84,3 +84,8 @@ ADD just_date VARCHAR(10); -- Adjust the VARCHAR length to accommodate the new f
 --Setting values of a new column by getting the values from original stop_date_and_time column which was in varchar 100 format and converting it to 101 format
 UPDATE police_data
 SET just_date = CONVERT(VARCHAR, CONVERT(DATE, stop_date_and_time, 100), 101);
+
+--Selecting every column based on a date condition
+SELECT *
+FROM police_data
+WHERE just_date = '08/28/2005'; -- Adjust the date as needed
