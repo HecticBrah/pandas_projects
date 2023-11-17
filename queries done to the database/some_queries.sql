@@ -89,3 +89,8 @@ SET just_date = CONVERT(VARCHAR, CONVERT(DATE, stop_date_and_time, 100), 101);
 SELECT *
 FROM police_data
 WHERE just_date = '08/28/2005'; -- Adjust the date as needed
+
+--Selecting every column based on a date condition
+SELECT *
+FROM police_data
+WHERE just_date = CAST('20050828' AS DATETIME); -- Adjust the date as needed
