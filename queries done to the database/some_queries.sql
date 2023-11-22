@@ -99,3 +99,8 @@ WHERE just_date = CAST('20050828' AS DATETIME); -- Adjust the date as needed
 SELECT *
 FROM police_data
 WHERE just_date = '12/31/2005';
+
+--Selecting every NYE record
+SELECT *
+FROM police_data
+WHERE SUBSTRING(just_date, 1, 5) = '12/31';
