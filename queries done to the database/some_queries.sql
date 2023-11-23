@@ -104,3 +104,8 @@ WHERE just_date = '12/31/2005';
 SELECT *
 FROM police_data
 WHERE SUBSTRING(just_date, 1, 5) = '12/31';
+
+--Counting NYE records
+SELECT COUNT(*) AS RecordsCount
+FROM police_data
+WHERE SUBSTRING(just_date, 1, 5) = '12/31';
