@@ -109,3 +109,15 @@ WHERE SUBSTRING(just_date, 1, 5) = '12/31';
 SELECT COUNT(*) AS RecordsCount
 FROM police_data
 WHERE SUBSTRING(just_date, 1, 5) = '12/31';
+
+--The query selects several columns: case_id, driver_gender, driver_race, stop_duration_in_minutes, and stopped_by from the police_data table.
+--ROW_NUMBER() OVER(PARTITION BY stopped_by ORDER BY stop_duration_in_minutes) AS rownum generates a sequential row number for each row within partitions based on the stopped_by column. Within each partition, the rows are ordered based on the stop_duration_in_minutes.
+--FROM police_data: Specifies the table from which the data is being retrieved (police_data).
+--ORDER BY stopped_by, stop_duration_in_minutes: Orders the final result set by stopped_by first and then by stop_duration_in_minutes.
+--This query essentially assigns a row number to each row within groups defined by the stopped_by column. The row numbers are based on the ascending order of stop_duration_in_minutes within each group of stopped_by.
+
+SELECT case_id, driver_gender, driver_race, stop_duration_in_minutes, stopped_by,
+ROW_NUMBER() OVER(PARTITION BY stopped_by
+ORDER BY stop_duration_in_minutes) AS rownum
+FROM police_data
+ORDER BY stopped_by, stop_duration_in_minutes;
