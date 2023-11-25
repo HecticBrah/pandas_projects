@@ -121,3 +121,11 @@ ROW_NUMBER() OVER(PARTITION BY stopped_by
 ORDER BY stop_duration_in_minutes) AS rownum
 FROM police_data
 ORDER BY stopped_by, stop_duration_in_minutes;
+
+--Average stop duration by each police officer
+SELECT 
+    stopped_by,
+    AVG(stop_duration_in_minutes) AS avg_stop_duration
+FROM police_data
+GROUP BY stopped_by
+ORDER BY stopped_by;
