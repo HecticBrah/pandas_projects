@@ -129,3 +129,13 @@ SELECT
 FROM police_data
 GROUP BY stopped_by
 ORDER BY stopped_by;
+
+--Getting average stop time for each officer and getting their names from officers_data tabe with join
+SELECT 
+    pd.stopped_by,
+	o.name, -- Assuming 'officer_name' is the column in the 'officers' table
+    AVG(pd.stop_duration_in_minutes) AS avg_stop_duration
+FROM police_data pd
+JOIN officers_data o ON pd.stopped_by = o.badge_number -- Joining 'police_data' with 'officers' table
+GROUP BY pd.stopped_by, o.name
+ORDER BY pd.stopped_by, o.name;
