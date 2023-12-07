@@ -13,7 +13,6 @@ The project extends beyond visualization, encompassing the exportation of these 
 - [Creating a SQL Database](#creating-a-sql-database)
 - [Database Diagram](#database-diagram)
 - [SQL Queries](#sql-queries)
-- [License](#license)
 
 ## Project Structure
 
