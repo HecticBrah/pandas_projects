@@ -37,7 +37,6 @@ Explore the `sql queries for creating database table/` directory to find the que
 
 The `database diagram/` directory contains a database diagram (`police_db_diagram.png`) illustrating the structure of the SQL database.
 
-
 ## SQL Queries
 
 The `queries done to the databases/` directory includes SQL file which showcases SQL skills and demonstrate how to retrieve and filter data from the SQL database.
