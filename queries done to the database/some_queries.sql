@@ -139,3 +139,10 @@ FROM police_data pd
 JOIN officers_data o ON pd.stopped_by = o.badge_number -- Joining 'police_data' with 'officers' table
 GROUP BY pd.stopped_by, o.name
 ORDER BY pd.stopped_by, o.name;
+
+--Count how long has each officer stopped people for
+SELECT
+    stopped_by,
+    SUM(stop_duration_in_minutes) AS total_stop_time
+FROM police_data
+GROUP BY stopped_by;
