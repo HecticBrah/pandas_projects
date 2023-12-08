@@ -1,6 +1,5 @@
 # Police Dataset Project
 
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 ## Overview
 
@@ -14,7 +13,6 @@ The project extends beyond visualization, encompassing the exportation of these 
 - [Creating a SQL Database](#creating-a-sql-database)
 - [Database Diagram](#database-diagram)
 - [SQL Queries](#sql-queries)
-- [License](#license)
 
 ## Project Structure
 
@@ -39,17 +37,13 @@ Explore the `sql queries for creating database table/` directory to find the que
 
 The `database diagram/` directory contains a database diagram (`police_db_diagram.png`) illustrating the structure of the SQL database.
 
-
 ## SQL Queries
 
 The `queries done to the databases/` directory includes SQL file which showcases SQL skills and demonstrate how to retrieve and filter data from the SQL database.
 
-## License
 
-This project is licensed under the [MIT License](LICENSE). See the [LICENSE](LICENSE) file for details.
+## Usage
 
----
-
-Feel free to customize this template further to include more specific details about your project, dependencies, or instructions for running the notebooks and SQL scripts.
+Explore the cleaned dataset and leverage the insights gained from the analysis.
 
 
