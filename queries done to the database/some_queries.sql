@@ -146,3 +146,13 @@ SELECT
     SUM(stop_duration_in_minutes) AS total_stop_time
 FROM police_data
 GROUP BY stopped_by;
+
+--Getting the names for previous query and ordering in descending order
+SELECT
+    pd.stopped_by,
+	o.name,
+    SUM(pd.stop_duration_in_minutes) AS total_stop_time
+FROM police_data pd
+JOIN officers_data o ON pd.stopped_by = o.badge_number
+GROUP BY pd.stopped_by, o.name
+ORDER BY SUM(pd.stop_duration_in_minutes) DESC;
