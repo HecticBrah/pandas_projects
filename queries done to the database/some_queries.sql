@@ -156,3 +156,11 @@ FROM police_data pd
 JOIN officers_data o ON pd.stopped_by = o.badge_number
 GROUP BY pd.stopped_by, o.name
 ORDER BY SUM(pd.stop_duration_in_minutes) DESC;
+
+--Getting a  difference between first and last stop data in days
+SELECT DATEDIFF(day, MIN_DATE, MAX_DATE) AS day_difference
+FROM (
+    SELECT MIN(CONVERT(datetime, stop_date_and_time, 120)) AS MIN_DATE,
+           MAX(CONVERT(datetime, stop_date_and_time, 120)) AS MAX_DATE
+    FROM police_data
+) AS date_range;
