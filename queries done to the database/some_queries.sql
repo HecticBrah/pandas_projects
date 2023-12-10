@@ -164,3 +164,11 @@ FROM (
            MAX(CONVERT(datetime, stop_date_and_time, 120)) AS MAX_DATE
     FROM police_data
 ) AS date_range;
+
+--Getting a  difference between first and last stop data in years
+SELECT DATEDIFF(year, MIN_DATE, MAX_DATE) AS day_difference
+FROM (
+    SELECT MIN(CONVERT(datetime, stop_date_and_time, 120)) AS MIN_DATE,
+           MAX(CONVERT(datetime, stop_date_and_time, 120)) AS MAX_DATE
+    FROM police_data
+) AS date_range;
