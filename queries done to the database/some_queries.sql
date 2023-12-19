@@ -172,3 +172,6 @@ FROM (
            MAX(CONVERT(datetime, stop_date_and_time, 120)) AS MAX_DATE
     FROM police_data
 ) AS date_range;
+
+--Day of the year for all stops in a table
+SELECT DATEPART(DAYOFYEAR, stop_date_and_time) AS day_of_year FROM police_data;
