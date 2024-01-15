@@ -46,4 +46,10 @@ The `queries done to the databases/` directory includes SQL file which showcases
 
 Explore the cleaned dataset and leverage the insights gained from the analysis.
 
+## Tableau Public Viz
+
+Explore the interactive Tableau Public visualization to gain additional insights:
+
+[Driver stops Viz](https://public.tableau.com/app/profile/dominikvukelic/viz/Driverstops/Driverstops)
+
 
